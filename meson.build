@@ -25,7 +25,7 @@ BPM = library(
 
 loader = executable(
   'loader',
-  'tests/bpm.c',
+  'tests/copy_bmp.c',
   link_with: [
     BPM
     ]

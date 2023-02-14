@@ -32,3 +32,5 @@ int BMP_write_to_path(BMP *img, const char *path);
 int BMP_get_pixel(BMP *img, int x, int y, int32_t pixel);
 
 void BMP_fexplain_err(FILE *stream, int err);
+
+int BMP_destroy(BMP *img);

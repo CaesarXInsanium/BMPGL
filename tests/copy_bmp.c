@@ -15,5 +15,7 @@ int main(int argc, char **argv) {
 
   BMP_write_to_path(bmp, "images/output.bmp");
 
+  BMP_destroy(bmp);
+
   return EXIT_SUCCESS;
 }

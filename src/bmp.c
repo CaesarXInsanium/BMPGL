@@ -129,3 +129,9 @@ void BMP_fexplain_err(FILE *stream, int err) {
     fprintf(stream, "Unknown Error?\n");
   }
 }
+
+int BMP_destroy(BMP *img){
+  free(img->data);
+  free(img);
+  return BMP_SUCCESS;
+}
